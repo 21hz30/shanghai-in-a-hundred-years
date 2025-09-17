@@ -1,0 +1,364 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	/* font-family: "楷体"; */
+	font-family: Merriweather;
+	background-color: rgba(197, 197, 183, 0.2);
+	background-attachment: fixed;
+	color: rgba(58, 42, 29, 0.9);
+	min-height: 100vh;
+	position: relative; /* 相对定位 */
+	width: 100%; /* 宽度占比60% */
+	height: 100vh; /* 高度占满视口 */
+	min-height: 100vh; /* 最小高度 */
+	overflow: hidden; /* 隐藏溢出内容 */
+}
+
+
+#deco-j2{
+	width: 50%;
+	position: fixed;
+	margin-left: 717px;
+	margin-top: 350px;
+	z-index: 1;
+	opacity: 1;
+}
+#deco-j3{
+	width: 50%;
+	position: fixed;
+	/* margin-left: 708px; */
+	margin-top: 350px;
+	z-index: 1;
+	opacity: 1;
+}
+#deco-j4{
+	position: fixed;
+	margin-top: 372px;
+	margin-left: 28px;
+	z-index: 1;
+	width: 6.3%;
+	opacity: 1;
+}
+
+#deco-j10{
+	position: fixed;
+	width: 30%;
+	margin-left: 1150px;
+	margin-top: 200px;
+	opacity: 0.9;
+	z-index: 0;
+}
+#deco-j5{
+	position: fixed;
+	margin-left: 1225px;
+	/* z-index: 100; */
+	margin-top: -35px;
+	opacity: 0.9;
+	z-index: 0;
+}
+#deco-j6{
+	position: fixed;
+	margin-left: 1000px;
+	z-index: 0;
+	opacity: 0.9;
+}
+
+#deco-j7{
+	position: fixed;
+	width: 30%;
+	margin-top: 200px; 
+	margin-left: -10px;
+	z-index: 0;
+	opacity: 0.9;
+}
+
+#deco-j8{
+	position: fixed;
+	width: 50%;
+	z-index: 0;
+	margin-top: -100px;
+	margin-left: 10px;
+	opacity: 0.9;
+}
+#deco-j9{
+	position: fixed;
+	width: 50%;
+	z-index: 0;
+	margin-top: -100px;
+	margin-left: 370px;
+	opacity: 0.9;
+}
+
+
+#name1{
+	position: absolute;
+	font-family: "方正舒体";
+	font-size: 50px;
+	float: left;
+	width: 50%;
+	margin-top: 3%;
+	margin-left: 5%;
+	font-weight: bold;
+	z-index: 1000;
+	filter: drop-shadow(2px 2px 8px rgba(139, 69, 19, 0.4));
+	transition: opacity 0.8s ease;
+}
+
+
+.k1{
+	position: absolute;
+	width: 10%;
+	margin-top: 2%;
+	margin-left: 35%;
+	z-index: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease;
+}
+
+#z4{
+	font-weight: 700px;
+background-color: rgba(255, 255, 255, 0.9);
+position: absolute;
+overflow: hidden;
+/* font-weight: bold; */
+	/* 滚动条设置 */
+	overflow-y: auto;
+	/* 自定义滚动条样式 */
+	scrollbar-width: thin;
+	/* font-family: ; */
+	background: linear-gradient(135deg, rgba(245, 245, 220, 9) 0%, rgba(240, 230, 210, 9) 50%, rgba(235, 225, 200, 9) 100%);
+	scrollbar-color: rgba(141, 111, 63, 0.8) rgba(141, 111, 63, 0.2);
+	padding: 1px;
+	font-size: 22px;
+	margin-top: 9%;
+	margin-left: 8%;
+	z-index: 1000;
+	text-indent: 2em;
+	line-height: 1.5;
+	/* font-weight: bold; */
+	width: 647px;
+	height: 555px;
+	border-width: 4em;
+	border-radius: 40px; 
+	/* border-color: #4A3C30; */
+	/* border: solid; */
+	padding: 20px;
+	/* background-color: rgba(148, 136, 108, 0.2); */
+	box-shadow: 0 0 10px rgba(2, 30, 50, 0.4);
+	opacity: 1;
+	transition: opacity 0.8s ease;
+	cursor: pointer; /* 添加鼠标指针样式 */
+		cursor: pointer;
+		letter-spacing: 0.02em; /* Subtle letter spacing */
+		text-rendering: optimizeLegibility; /* Enhanced text rendering */
+		-webkit-font-smoothing: antialiased; /* Smooth font rendering */
+}
+
+/* Webkit浏览器滚动条样式 */
+#z4::-webkit-scrollbar {
+	width: 12px;
+}
+#z4::-webkit-scrollbar-track {
+	background: rgba(141, 111, 63, 0.2);
+	border-radius: 10px;
+}
+#z4::-webkit-scrollbar-thumb {
+	background: rgba(141, 111, 63, 0.8);
+	border-radius: 10px;
+	border: 2px solid rgba(141, 111, 63, 0.2);
+}
+#z4::-webkit-scrollbar-thumb:hover {
+	background: rgba(99, 70, 49, 0.9);
+}
+#z4::-webkit-scrollbar-thumb:active {
+	background: rgba(99, 70, 49, 1);
+}
+
+#z5{
+	font-weight: 700px;
+background: rgba(255, 255, 255, 0.9);
+	background: linear-gradient(135deg, rgba(245, 245, 220, 9) 0%, rgba(240, 230, 210, 9) 50%, rgba(235, 225, 200, 9) 100%);
+
+overflow: hidden;
+/* font-weight: bold; */
+	/* 滚动条设置 */
+	overflow-y: auto;
+	/* 自定义滚动条样式 */
+	scrollbar-width: thin;
+	/* font-family: ; */
+	scrollbar-color: rgba(141, 111, 63, 0.8) rgba(141, 111, 63, 0.2);
+	padding: 1px;
+	position: absolute;
+	font-size: 22px;
+	margin-top: 9%;
+	margin-left: 47%;
+	z-index: 1000;
+	text-indent: 2em;
+	line-height: 1.5;
+	/* font-weight: bold; */
+	width: 670px;
+	height: 555px; 
+	border-width: 4em;
+	border-radius: 40px; 
+	/* border-color: #4A3C30; */
+	/* border: solid; */
+	padding: 20px;
+	/* background-color: rgba(191, 131, 25, 0.3); */
+	box-shadow: 0 0 10px rgba(2, 30, 50, 0.4);
+	opacity: 0;
+	transition: opacity 0.8s ease;
+	direction: rtl;
+}
+
+/* 重置z5内文本方向为正常 */
+#z5 * {
+	direction: ltr;
+}
+#z5::-webkit-scrollbar {
+	width: 12px;
+}
+#z5::-webkit-scrollbar-track {
+	background: rgba(141, 111, 63, 0.2);
+	border-radius: 10px;
+}
+#z5::-webkit-scrollbar-thumb {
+	background: rgba(141, 111, 63, 0.8);
+	border-radius: 10px;
+	border: 2px solid rgba(141, 111, 63, 0.2);
+}
+#z5::-webkit-scrollbar-thumb:hover {
+	background: rgba(99, 70, 49, 0.9);
+}
+#z5::-webkit-scrollbar-thumb:active {
+	background: rgba(99, 70, 49, 1);
+}
+
+#name2{
+	position: absolute;
+	width: 35%;
+	margin-top: 4%;
+	margin-left: 10%;
+	z-index: 2;
+	opacity: 0;
+	transition: opacity 0.8s ease;
+}
+
+.h2{
+	position: absolute;
+	width: 30%;
+	cursor: pointer; /* 鼠标悬停时显示手型光标 */
+	z-index: 1000;
+	transform: translate(-50%, -50%); /* 中心对齐 */
+	transition: all 0.3s ease; /* 平滑过渡效果 */
+	border-radius: 25px; /* 圆角 */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* 阴影 */
+}
+
+/* 重新定位图片 */
+#z2{
+	margin-left: 72%;
+	margin-top: 17%;
+	height: 320px;
+	z-index: 1000;
+	cursor: pointer;
+	transition: all 0.6s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.8s ease;
+	box-shadow: 0 6px 20px rgba(139, 69, 19, 0.15), 0 2px 8px rgba(0,0,0,0.1);
+	border-radius: 20px;
+	filter: contrast(1.05) saturate(1.1);
+	pointer-events: none;
+}
+
+#z3{
+	margin-left: 29%;
+	margin-top: 30%;
+	z-index: 1000;
+	width: 500px;
+	height: 570px;
+	cursor: pointer;
+	transition: z-index 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	box-shadow: 0 6px 20px rgba(139, 69, 19, 0.15), 0 2px 8px rgba(0,0,0,0.1);
+	border-radius: 20px;
+	filter: contrast(1.05) saturate(1.1);
+	opacity: 0;
+	pointer-events: none;
+}
+
+#z6{
+	margin-left: 72%;
+	margin-top: 40%;
+	width: 30%;
+	z-index: 1000;
+	cursor: pointer;
+	transition: z-index 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s ease;
+	box-shadow: 0 6px 20px rgba(139, 69, 19, 0.15), 0 2px 8px rgba(0,0,0,0.1);
+	border-radius: 20px;
+	filter: contrast(1.05) saturate(1.1);
+	pointer-events: none;
+}
+
+/* 鼠标悬停时图片置顶效果 */
+#z2:hover {
+	z-index: 1000;
+}
+
+#z3:hover {
+	z-index: 1000;
+}
+
+#z6:hover {
+	z-index: 1000;
+}
+
+/* #z7{
+	margin-left: 73%;
+	margin-top: 40%;
+	z-index: 100;
+	width: 450px;
+	height: 318px;
+	opacity: 0;
+	transition: opacity 0.8s ease;
+	border-radius: 20px;
+} */
+
+/* 查看咖啡馆信息按钮样式 */
+.view-cafe-info-btn {
+	position: absolute;
+	margin-left: 79%;
+	margin-top: 1%;
+	z-index: 1000;
+	background: linear-gradient(135deg, #8b8a6b, #d2cac2);
+	color: white;
+	border: none;
+	padding: 12px 24px;
+	font-size: 16px;
+	border-radius: 60px;
+	cursor: pointer;
+	box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+	transition: all 0.3s ease;
+	font-family: "楷体";
+	font-weight: bold;
+}
+
+.view-cafe-info-btn:hover {
+	background: linear-gradient(135deg, #a0a091, #e6f4dc);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+}
+
+/* #z8{
+	position: absolute;
+	float: right;
+	margin-top: 37%;
+	margin-left: 92%;
+		writing-mode: vertical-rl; */ /* 关键属性：vertical-rl 或 vertical-lr */
+	/* text-orientation: upright; /* 保持字符正立 */ */
+	/* 可选：微调字间距与行距 */
+	/* letter-spacing: 0.1em; */
+	/* line-height: 1.5; */
+	/* white-space: nowrap;       /* 防止自动换行 */ */
+	/* font-family: "楷体"; */
+	/* font-weight: bold; */
+/* } */
+

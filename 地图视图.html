@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<title>地图视图</title>
+		<link rel="stylesheet" type="text/css" href="./css/地图视图.css"/>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="照片全集.html">Photo  Gallery</a>
+			<a href="列表视图.html">List View</a>
+			<a href="地图视图.html" class="active">Map View</a>
+		</header>
+		<!-- 主要内容容器 -->
+		<main>
+			<!-- 背景 -->
+			<div id="setting">
+				<img src="img/2-5.png"  id="deco-j8" alt="云朵左" decoding="async" loading="lazy">
+				<img src="img/2-5.png"  id="deco-j10" alt="云朵右" decoding="async" loading="lazy">
+				<img src="img/2-4.png" id="deco-j7" alt="云朵中" decoding="async" loading="lazy">
+				<img src="img/1-2.png" id="deco-j2" alt="浦东天际线左" decoding="async" loading="lazy">
+				<img src="img/2-2.png" id="deco-j3" alt="浦东天际线右" decoding="async" loading="lazy">
+				<img src="img/2-1.png" id="deco-j4" alt="东方明珠" decoding="async" loading="lazy">
+				<!-- 背景地图图片 -->
+				<div id="a2">
+					<img src="./img/上海地图.png" id="a1" alt="上海老地图"
+						srcset="./img/上海地图.png 1x, ./img/上海地图.png 2x"
+						sizes="(min-width: 1440px) 1500px, 96vw"
+						decoding="async" loading="eager" fetchpriority="high" />
+					<!-- 地图标记点：上海和平饭店 --> -->
+					<div class="landmark-marker" data-landmark="peace-hotel" style="position: absolute; top: 50%; left:48%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="上海和平饭店.html"><img src="./img/和平饭店·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Peace Hotel</div>
+					</div>
+					<!-- 地图标记点：美琪大戏院 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 60%; left: 18%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="美琪大剧院.html"><img src="./img/美琪大剧院·地图.png" class="marker-image"></a>
+						<div class="landmark-name">The Majestic Theatre</div>
+					</div>
+					<!-- 地图标记点：四行仓库 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 47%; left: 31%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="四行仓库.html"><img src="./img/四行仓库·地图.png" class="marker-image"></a>
+						<div class="landmark-name">The Si Hang Warehouse</div>
+					</div>
+					<!-- 地图标记点：马勒别墅 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 67%; left: 18%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="马勒别墅.html"><img src="./img/马勒别墅·地图.png" class="marker-image"></a>
+						<div class="landmark-name">The Moller Villa</div>
+					</div>
+					<!-- 地图标记点：和平女神像 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute;  top: 52%; left:47%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="和平女神像.html"><img src="./img/和平女神像·地图.png" class="marker-image"></a>
+						<div class="landmark-name">The Statue of Peace</div>
+					</div>
+					<!-- 地图标记点：信号台 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute;  top: 56%; left:47%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="信号台.html"><img src="./img/信号台·地图.png" class="marker-image"></a>
+						<div class="landmark-name">the Gutzlaff Signal Tower</div>
+					</div>
+					<!-- 地图标记点：百乐门 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 63%; left: 14%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="百乐门.html"><img src="./img/百乐门·地图.png" class="marker-image"></a>
+						<div class="landmark-name">The Paramount Ballroom</div>
+					</div>
+					<!-- 地图标记点：南京大戏院 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute;  top: 56%; left: 31%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="南京大戏院.html"><img src="./img/南京大戏院·地图.png" class="marker-image"></a>
+						<div class="landmark-name">The Shanghai Concert Hall</div>
+					</div>
+					<!-- 地图标记点：东方汇理银行 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 35%; left:55%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="东方汇理银行.html"><img src="./img/东方汇理银行·地图.png" class="marker-image"></a>
+						<div class="landmark-name">The Credit Industriel et Commercial (CIC) Bank Building</div>
+					</div>
+					<!-- 地图标记点：锦江饭店 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute;  top: 70%; left: 24%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="锦江饭店.html"><img src="./img/锦江饭店·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Jinjiang Hotel</div>
+					</div>
+					<!-- 地图标记点：上海大厦 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 38%; left:48%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="上海大厦.html"><img src="./img/上海大厦·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Shanghai Mansion</div>
+					</div>
+					<!-- 地图标记点：国泰电影院 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 74%; left: 22%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="国泰电影院.html"><img src="./img/国泰电影院·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Cathay Theatre</div>
+					</div>
+					<!-- 地图标记点：淮海大楼 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 76%; left: 14%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="淮海大楼.html"><img src="./img/淮海大楼·地图.png" class="marker-image"></a>
+						<div class="landmark-name">the iconic Huaihai Building</div>
+					</div>
+					<!-- 地图标记点：徐家汇天主教堂 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 77%; left: 12%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="徐家汇天主教堂.html"><img src="./img/徐家汇天主教堂·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Xujiahui Catholic Church</div>
+					</div>
+					<!-- 地图标记点：何东旧居 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 57%; left: 16%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="何东旧居.html"><img src="./img/何东旧居·地图.png" class="marker-image"></a>
+						<div class="landmark-name">the He Dong Residence</div>
+					</div>
+					<!-- 地图标记点：兰心大戏院 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 70%; left: 20%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="兰心大戏院.html"><img src="./img/兰心大戏院·地图.png" class="marker-image"></a>
+						<div class="landmark-name">the Lyceum Theatre</div>
+					</div>
+					<!-- 地图标记点：哥伦比亚乡村俱乐部 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 70%; left: 12%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="哥伦比亚乡村俱乐部.html"><img src="./img/哥伦比亚乡村俱乐部·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Columbia Country Club</div>
+					</div>
+					<!-- 地图标记点：常德公寓 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 60%; left: 16%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="常德公寓.html"><img src="./img/常德公寓·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Changde Apartments</div>
+					</div>
+					<!-- 地图标记点：德义大楼 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 60%; left: 20%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="德义大楼.html"><img src="./img/德义大楼·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Denis Apartments</div>
+					</div>
+					<!-- 地图标记点：同孚大楼 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 62%; left: 22%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="同孚大楼.html"><img src="./img/同孚大楼·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Yates Apartments</div>
+					</div>
+					<!-- 地图标记点：国际饭店 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 63%; left: 20%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="国际饭店.html"><img src="./img/国际饭店·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Park Hotel</div>
+					</div>
+					<!-- 地图标记点：大光明电影院 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 53%; left: 33%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="大光明电影院.html"><img src="./img/大光明电影院·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Grand Cinema</div>
+					</div>
+					<!-- 地图标记点：圣三一堂 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 50%; left:45%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="圣三一堂.html"><img src="./img/圣三一堂·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Trinity Church</div>
+					</div>
+					<!-- 地图标记点：大世界 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 60%; left:38%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="大世界.html"><img src="./img/大世界·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Shanghai Great World</div>
+					</div>
+					<!-- 地图标记点：平安电影院 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute;top: 60%; left: 24%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="平安电影院.html"><img src="./img/平安电影院·地图.png" class="marker-image"></a>
+						<div class="landmark-name">the Peace cinema</div>
+					</div>
+					<!-- 地图标记点：东方饭店上海工人文化宫 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute;top: 55%; left:38%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="东方饭店上海工人文化宫.html"><img src="./img/东方饭店上海工人文化宫·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Shanghai Workers’ Cultural Palace</div>
+					</div>
+					<!-- 地图标记点：第一百货商店 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 50%; left:36%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="第一百货商店.html"><img src="./img/第一百货商店·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Shanghai First Department Store</div>
+					</div>
+					<!-- 地图标记点：上海犹太人总会 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 58%; left: 22%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="上海犹太人总会.html"><img src="./img/上海犹太人总会·地图.png" class="marker-image"></a>
+						<div class="landmark-name">The Shanghai Jewish community</div>
+					</div>
+					<!-- 地图标记点：西摩会堂 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 50%; left: 13%; transform: translate(-50%, -50%);">
+						<a target="_blank" href="西摩会堂.html"><img src="./img/西摩会堂·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Ohel Rachel Synagogue</div>
+					</div>
+					<!-- 地图标记点：武康大楼 -->
+					<div class="landmark-marker" data-landmark="MAJESTIC THEATRE" style="position: absolute; top: 70%; left: 15%;  transform: translate(-50%, -50%);">
+						<a target="_blank" href="武康大楼.html"><img src="./img/武康大楼·地图.png" class="marker-image"></a>
+						<div class="landmark-name">Wukang Mansion</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		 <!-- 引入外部JavaScript文件 -->
+		<script src="./js/地图视图.js"></script>
+	</body>
+</html>

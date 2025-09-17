@@ -1,0 +1,276 @@
+/* 全局重置样式 */
+* {
+	padding: 0; /* 清除内边距 */
+	margin: 0; /* 清除外边距 */
+}
+
+/* 基础页面样式 */
+body {
+		font-size: 16px; /* Modern web standard base size */
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Professional font stack */
+		line-height: 1.6; /* Optimal reading line height */
+		color: #333; /* Better text contrast */
+		background-color: rgba(141, 111, 63, 0.1); /* 设置页面背景色 */
+		-webkit-font-smoothing: antialiased; /* Smooth font rendering */
+		-moz-osx-font-smoothing: grayscale; /* Smooth font rendering on Firefox */
+
+}
+
+
+/* 背景搭建 */
+#setting {
+	position: relative; /* 绝对定位 */
+	width: 100%; /* 宽度占比100% */
+	height: 100vh; /* 高度占满视口 */
+	min-height: 100vh; /* 最小高度 */
+	overflow: hidden; /* 隐藏溢出内容 */
+	/* float: right; *//* 右浮动 */
+}
+/* 导航 */
+header{
+	font-family: times;
+	position: absolute;
+	margin-left: 0px;
+	margin-top: -8px;
+	float: left;
+	font-size: 35px;
+	font-weight: bolder;
+	/* margin-left: -325px; */
+	/* margin-top: 330px; */
+	/* writing-mode: horizontal-tb; /* Horizontal text flow */ */
+	/* transform: rotate(-90deg); /* Rotate counterclockwise 90 degrees */ */
+	transform-origin: center;
+	white-space: nowrap;       /* 防止自动换行 */
+	z-index: 1000;
+}
+.mui-bar a{
+/* 	font-size: 12px; */
+	font-family: times;
+	filter: drop-shadow(1px 1px 8px rgba(240, 208, 179, 0.9));
+	transition: opacity 0.8s ease;
+	font-style: italic;
+		text-decoration: none; /* Clean, modern approach */
+		color:  rgba(90, 70, 40, 0.9); /* Refined brown tone for better contrast */
+		/* font-family: inherit; *//* Inherit the modern font stack from header */
+		font-weight: 10000; /* Medium weight for navigation links */
+		/* font-size: inherit; */ /* Consistent with header size */
+		border-radius: 20px; /* Subtle, modern border radius */
+		/* padding: 8px 12px; */ /* Balanced padding for touch targets */
+		margin: 0 4px; /* Spacing between navigation items */
+		/* background-color: rgba(141, 111, 63, 0.25); */ /* Slightly more transparent */
+		/* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */ /* Softer, more modern shadow */
+		transition: all 0.2s ease; /* Smooth hover transitions */
+		display: inline-block; /* Better control over spacing */
+		vertical-align: middle; /* Proper alignment */
+		
+	}
+	
+	.mui-bar a:hover {
+		background-color: rgba(141, 111, 63, 0.4); /* Subtle hover effect */
+		color: #2d1f17; /* Darker text on hover */
+		transform: translateY(-1px); /* Gentle lift effect */
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+		
+	}
+	
+	/* 活跃状态样式 */
+	.mui-bar a.active {
+		background-color: rgba(141, 111, 63, 0.6); /* 更深的背景色表示活跃状态 */
+		color: #2d1f17; /* 深色文字 */
+		transform: translateY(-1px); /* 保持悬浮效果 */
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 更明显的阴影 */
+		font-weight: bold; /* 加粗字体 */
+	}
+	
+	/* 活跃状态的悬停效果 */
+	.mui-bar a.active:hover {
+		background-color: rgba(141, 111, 63, 0.7); /* 悬停时稍微加深 */
+		transform: translateY(-1px); /* 保持悬浮位置 */
+	}
+#deco-j2{
+	width: 50%;
+	position: absolute;
+	margin-left: 717px;
+	margin-top: 350px;
+	z-index: 1;
+	opacity: 1;
+}
+#deco-j3{
+	width: 50%;
+	position: absolute;
+	/* margin-left: 708px; */
+	margin-top: 350px;
+	z-index: 1;
+	opacity: 1;
+}
+#deco-j4{
+	position: absolute;
+	margin-top: 372px;
+	margin-left: 28px;
+	z-index: 1;
+	width: 6.3%;
+	opacity: 1;
+}
+
+#deco-j10{
+	position: absolute;
+	width: 30%;
+	margin-left: 1150px;
+	margin-top: 200px;
+	opacity: 0.9;
+	z-index: 0;
+}
+#deco-j5{
+	position: absolute;
+	margin-left: 1225px;
+	/* z-index: 100; */
+	margin-top: -35px;
+	opacity: 0.9;
+	z-index: 0;
+}
+#deco-j6{
+	position: absolute;
+	margin-left: 1000px;
+	z-index: 0;
+	opacity: 0.9;
+}
+
+#deco-j7{
+	position: absolute;
+	width: 30%;
+	margin-top: 200px; 
+	margin-left: -10px;
+	z-index: 0;
+	opacity: 0.9;
+}
+
+#deco-j8{
+	position: absolute;
+	width: 50%;
+	z-index: 0;
+	margin-top: -100px;
+	margin-left: 10px;
+	opacity: 0.9;
+}
+#deco-j9{
+	position: absolute;
+	width: 50%;
+	z-index: 0;
+	margin-top: -100px;
+	margin-left: 370px;
+	opacity: 0.9;
+}
+
+/* 主要内容 */
+#substance{
+	background-color: rgba(38, 29, 17, 0.2);
+	width: 1300px;
+	height: 745px;
+	margin-top: 25px;
+	margin-left: 125px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+	z-index: 40;
+	border-radius: 40px;
+	position: relative;
+	overflow-y: auto;
+	/* 自定义滚动条样式 */
+	scrollbar-width: thin;
+	scrollbar-color: rgba(141, 111, 63, 0.8) rgba(141, 111, 63, 0.2);
+}
+/* Webkit浏览器滚动条样式 */
+#substance::-webkit-scrollbar {
+	width: 12px;
+}
+#substance::-webkit-scrollbar-track {
+	background: rgba(141, 111, 63, 0.2);
+	border-radius: 10px;
+}
+#substance::-webkit-scrollbar-thumb {
+	background: rgba(141, 111, 63, 0.8);
+	border-radius: 10px;
+	border: 2px solid rgba(141, 111, 63, 0.2);
+}
+#substance::-webkit-scrollbar-thumb:hover {
+	background: rgba(99, 70, 49, 0.9);
+}
+#substance::-webkit-scrollbar-thumb:active {
+	background: rgba(99, 70, 49, 1);
+}
+
+/* 卡片容器样式 */
+.card-container {
+	/* position: absolute; */
+	left: 5px;
+	top: 5px;
+	z-index: 200;
+}
+
+/* 卡片样式 */
+.card {
+	/* display: flex; */
+	/* float:top; */
+	/* position: relative; */
+	width: 1286px;
+	height: 720px;
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 40px;
+	box-shadow: 0 15px 40px rgba(99, 70, 49, 0.2), 0 0 35px rgba(141, 111, 63, 0.1);
+	margin-bottom: 30px;
+	overflow: hidden;
+	transition: all 0.4s ease;
+	border: 2px solid rgba(141, 111, 63, 0.2);
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+
+/* 图片文字排版 */
+.card-container img {
+	display: block;
+	border-radius: 15px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	transition: all 0.3s ease;
+	cursor: pointer;
+	object-fit: cover;
+	margin: 5px 5px;
+}
+.card-container img:hover {
+	transform: scale(1.02);
+	filter: brightness(1.05);
+	box-shadow: 0 4px 16px rgba(255, 255, 255, 0.4);
+}
+.card-container p{
+	filter: drop-shadow(1px 1px 8px rgba(240, 208, 179, 0.9));
+	transition: opacity 0.8s ease;
+	font-family: "方正舒体";
+	color: #000000;
+	/* writing-mode: vertical-rl; */  /* 关键属性：vertical-rl 或 vertical-lr */
+	/* text-orientation: upright; *//* 保持字符正立 */
+	/* 可选：微调字间距与行距 */
+	/* letter-spacing: 20em; */
+	/* line-height: 1.5; */
+	/* word-spacing: -90px; */
+	white-space: nowrap;       /* 防止自动换行 */
+	/* font-family: "楷体"; */
+	font-weight: bold;
+	font-size: 30px;
+	position: absolute;
+	/* float: right; */
+	margin-top: 50%;
+	right: 5%; /* 改用right定位，让文字右对齐 */
+	text-align: right; /* 文字右对齐 */
+	width: 100%; /* 设置宽度确保有足够空间 */
+	z-index: 100;
+	/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.9); */
+}
+
+.photo {
+	position: relative;
+	padding: 10px;
+	min-height: 200px;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+}

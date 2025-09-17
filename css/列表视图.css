@@ -1,0 +1,631 @@
+/* 全局重置样式 */
+* {
+	padding: 0; /* 清除内边距 */
+	margin: 0; /* 清除外边距 */
+}
+
+/* 基础页面样式 */
+body {
+		font-size: 16px; /* Modern web standard base size */
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Professional font stack */
+		line-height: 1.6; /* Optimal reading line height */
+		color: #333; /* Better text contrast */
+		background-color: rgba(141, 111, 63, 0.1); /* 设置页面背景色 */
+		-webkit-font-smoothing: antialiased; /* Smooth font rendering */
+		-moz-osx-font-smoothing: grayscale; /* Smooth font rendering on Firefox */
+
+}
+
+/* 导航 */
+header{
+	font-family: times;
+	position: absolute;
+	margin-left: 0px;
+	margin-top: -35px;
+	float: left;
+	font-size: 35px;
+	font-weight: bolder;
+	/* margin-left: -325px; */
+	/* margin-top: 330px; */
+	/* writing-mode: horizontal-tb; /* Horizontal text flow */ 
+	/* transform: rotate(-90deg);  Rotate counterclockwise 90 degrees */
+	transform-origin: center;
+	white-space: nowrap;       /* 防止自动换行 */
+	z-index: 1000;
+}
+
+/* 背景 */
+#setting {
+	position: relative; /* 绝对定位 */
+	width: 100%; /* 宽度占比100% */
+	height: 100vh; /* 高度占满视口 */
+	min-height: 100vh; /* 最小高度 */
+	/* overflow: hidden; */ /* 隐藏溢出内容 */
+	/* float: right; *//* 右浮动 */
+}
+.mui-bar a{
+/* 	font-size: 12px; */
+	font-family: times;
+	filter: drop-shadow(1px 1px 8px rgba(240, 208, 179, 0.9));
+	transition: opacity 0.8s ease;
+	font-style: italic;
+		text-decoration: none; /* Clean, modern approach */
+		color:  rgba(90, 70, 40, 0.9); /* Refined brown tone for better contrast */
+		/* font-family: inherit; *//* Inherit the modern font stack from header */
+		font-weight: 10000; /* Medium weight for navigation links */
+		/* font-size: inherit; */ /* Consistent with header size */
+		border-radius: 20px; /* Subtle, modern border radius */
+		/* padding: 8px 12px; */ /* Balanced padding for touch targets */
+		margin: 0 4px; /* Spacing between navigation items */
+		/* background-color: rgba(141, 111, 63, 0.25); */ /* Slightly more transparent */
+		/* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */ /* Softer, more modern shadow */
+		transition: all 0.2s ease; /* Smooth hover transitions */
+		display: inline-block; /* Better control over spacing */
+		vertical-align: middle; /* Proper alignment */
+		
+	}
+	
+	.mui-bar a:hover {
+		background-color: rgba(141, 111, 63, 0.4); /* Subtle hover effect */
+		color: #2d1f17; /* Darker text on hover */
+		transform: translateY(-1px); /* Gentle lift effect */
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+		
+	}
+	
+	/* 活跃状态样式 */
+	.mui-bar a.active {
+		background-color: rgba(141, 111, 63, 0.6); /* 更深的背景色表示活跃状态 */
+		color: #2d1f17; /* 深色文字 */
+		transform: translateY(-1px); /* 保持悬浮效果 */
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 更明显的阴影 */
+		font-weight: bold; /* 加粗字体 */
+	}
+	
+	/* 活跃状态的悬停效果 */
+	.mui-bar a.active:hover {
+		background-color: rgba(141, 111, 63, 0.7); /* 悬停时稍微加深 */
+		transform: translateY(-1px); /* 保持悬浮位置 */
+	}
+
+#deco-j2{
+	width: 50%;
+	position: fixed;
+	margin-left: 717px;
+	margin-top: 350px;
+	z-index: 1;
+	opacity: 1;
+}
+#deco-j3{
+	width: 50%;
+	position: fixed;
+	/* margin-left: 708px; */
+	margin-top: 350px;
+	z-index: 1;
+	opacity: 1;
+}
+#deco-j4{
+	position: fixed;
+	margin-top: 372px;
+	margin-left: 28px;
+	z-index: 1;
+	width: 6.3%;
+	opacity: 1;
+}
+
+#deco-j10{
+	position: fixed;
+	width: 30%;
+	margin-left: 1150px;
+	margin-top: 200px;
+	opacity: 0.9;
+	z-index: 0;
+}
+#deco-j5{
+	position: fixed;
+	margin-left: 1225px;
+	/* z-index: 100; */
+	margin-top: -35px;
+	opacity: 0.9;
+	z-index: 0;
+}
+#deco-j6{
+	position: fixed;
+	margin-left: 1000px;
+	z-index: 0;
+	opacity: 0.9;
+}
+
+#deco-j7{
+	position: fixed;
+	width: 30%;
+	margin-top: 200px; 
+	margin-left: -10px;
+	z-index: 0;
+	opacity: 0.9;
+}
+
+#deco-j8{
+	position: fixed;
+	width: 50%;
+	z-index: 0;
+	margin-top: -100px;
+	margin-left: 10px;
+	opacity: 0.9;
+}
+#deco-j9{
+	position: fixed;
+	width: 50%;
+	z-index: 0;
+	margin-top: -100px;
+	margin-left: 370px;
+	opacity: 0.9;
+}
+
+/* 列表 */
+#substance{
+	background-color: rgba(38, 29, 17, 0.2);
+	width: 1300px;
+	height: 745px;
+	margin-top: 25px;
+	margin-left: 125px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+	z-index: 40;
+	border-radius: 40px;
+	position: relative;
+	/* overflow-y: auto; */
+	/* 隐藏滚动条但保留滚动功能 */
+	/* -ms-overflow-style: none; */ /* IE/Edge */
+	/* scrollbar-width: none; */ /* Firefox */
+	scrollbar-color: rgba(141, 111, 63, 0.8) rgba(141, 111, 63, 0.2);
+}
+
+/* 隐藏 #substance 的滚动条（仅隐藏样式，保留滚动功能） */
+#substance::-webkit-scrollbar { /* Chrome/Safari/Edge */
+	width: 0;
+	height: 0;
+}
+
+/* 右侧导航样式 */
+nav{
+	position: relative;
+	/* background-color: #000000; */
+	z-index: 1000;
+	position: absolute;
+	/* margin-left: 850px; */
+	margin-left: 0px;
+	margin-top: 0px;
+	height: 0px;
+	width: 1300px;
+	/* width: 445px; */
+	z-index: 100;
+	/* 滚动条设置 */
+	overflow-y: auto;
+	/* 自定义滚动条样式 */
+	scrollbar-width: thin;
+	/* font-family: ; */
+	scrollbar-color: rgba(141, 111, 63, 0.8) rgba(141, 111, 63, 0.2);
+	padding: 1px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 60px;
+}
+
+/* Webkit浏览器滚动条样式 */
+nav::-webkit-scrollbar {
+	width: 12px;
+}
+nav::-webkit-scrollbar-track {
+	background: rgba(141, 111, 63, 0.2);
+	border-radius: 10px;
+}
+nav::-webkit-scrollbar-thumb {
+	background: rgba(141, 111, 63, 0.8);
+	border-radius: 10px;
+	border: 2px solid rgba(141, 111, 63, 0.2);
+}
+nav::-webkit-scrollbar-thumb:hover {
+	background: rgba(99, 70, 49, 0.9);
+}
+nav::-webkit-scrollbar-thumb:active {
+	background: rgba(99, 70, 49, 1);
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li{
+	list-style: none;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Modern font stack */
+	position: relative;
+	z-index: 100;
+	font-family: Georgia;
+	margin: 10px 0;
+	font-weight: 600; /* Semi-bold for better readability */
+	font-size: 22px; /* Slightly smaller for better proportion */
+	color: #2c3e50; /* Better contrast color */
+	padding: 8px 20px; /* Adjusted padding */
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Softer shadow */
+	border-radius: 20px; /* Slightly smaller radius */
+	background-color: rgba(255, 255, 255, 0.6); /* More opaque background */
+	transition: all 0.3s ease;
+	text-align: right;
+	cursor: pointer; /* 添加鼠标指针样式 */
+		cursor: pointer;
+		letter-spacing: 0.02em; /* Subtle letter spacing */
+		text-rendering: optimizeLegibility; /* Enhanced text rendering */
+		-webkit-font-smoothing: antialiased; /* Smooth font rendering */
+}
+
+/* .t1 a{
+	width:445px ;
+} */
+
+nav li:hover {
+	background-color: rgba(141, 111, 63, 0.3);
+	transform: translateX(-5px);
+}
+
+/* 选中状态样式 */
+nav li.active {
+	background-color: rgba(141, 111, 63, 0.3);
+	transform: translateX(-5px);
+}
+
+/* 选中状态的悬停效果 */
+nav li.active:hover {
+	background-color: rgba(141, 111, 63, 0.3);
+	transform: translateX(-5px);
+}
+
+nav a{
+	text-decoration: unset;
+	/* float: right; */
+	z-index: 100;
+	color: #000000;
+}
+
+/* 卡片容器样式 */
+.card-container {
+	position: absolute;
+	left: 60px;
+	top: 50px;
+	z-index: 200;
+}
+
+/* 卡片样式 */
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 842px;
+	height: auto;
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 33px;
+	box-shadow: 0 15px 40px rgba(99, 70, 49, 0.3), 0 0 35px rgba(141, 111, 63, 0.4);
+	margin-bottom: 30px;
+	overflow: hidden;
+	transition: all 0.4s ease;
+	border: 0px solid rgba(141, 111, 63, 0.3);
+	margin-top: -30px;
+	margin-left: -50px;
+	z-index: 1010;
+}
+
+.card:hover {
+	transform: translateY(-8px) scale(1.02);
+	box-shadow: 0 15px 35px rgba(99, 70, 49, 0.3), 0 0 30px rgba(141, 111, 63, 0.2);
+	border-color: rgba(141, 111, 63, 0.1);
+}
+
+/* 卡片左侧样式 */
+.card-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f5f5f5;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+
+
+/* 和平饭店卡片左侧背景 */
+#card-和平饭店 .card-left {
+	background: linear-gradient(135deg, rgba(184, 134, 89, 0.9) 0%, rgba(141, 111, 63, 0.9) 100%);
+}
+
+/* 美琪大剧院卡片左侧背景 */
+#card-美琪大剧院.card-left {
+	background: linear-gradient(135deg, rgba(99, 70, 49, 0.9) 0%, rgba(76, 54, 38, 0.9) 100%);
+}
+
+/* 地点名称样式 - 覆盖在照片上方 */
+.location-name {
+	font-family: "方正舒体";
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	font-size: 40px;
+	writing-mode: vertical-rl; /* 关键属性：vertical-rl 或 vertical-lr */
+	text-orientation: upright; /* 保持字符正立 */ 
+	/* 可选：微调字间距与行距 */
+	letter-spacing: 0.1em; 
+	line-height: 1.5;
+	 white-space: nowrap;       /* 防止自动换行 */ 
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+	z-index: 3;
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+	width: calc(100% - 60px);
+}
+
+/* 地点照片样式 - 上下两张图片 */
+.location-image-top {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	z-index: 1;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加轻微阴影效果 */
+	transition: opacity 0.6s ease;
+}
+
+.location-image-bottom {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	z-index: 1;
+	overflow: hidden;
+	border-left: 2px solid rgba(255, 255, 255, 0.7); /* 添加白色半透明分隔线 */
+	transition: opacity 0.6s ease;
+}
+
+.location-image-top img, .location-image-bottom img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.4s ease;
+	filter: brightness(0.95); /* 轻微降低亮度 */
+}
+
+.location-image-top img:hover, .location-image-bottom img:hover {
+	transform: scale(1.05);
+	filter: brightness(1.05); /* 悬停时提高亮度 */
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* 咖啡图片样式 - 覆盖整个左侧区域 */
+.location-image-coffee {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	transition: opacity 0.6s ease;
+	overflow: hidden;
+}
+
+.location-image-coffee img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.95);
+}
+
+
+/* 卡片右侧样式 */
+.card-right {
+	/* 保持现有布局与背景，不作为定位上下文 */
+	display: flex;
+	font-family: Merriweather;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 20px;
+	flex: 1;
+	background: linear-gradient(135deg, rgba(245, 240, 235, 0.85) 0%, rgba(240, 235, 225, 0.90) 50%, rgba(235, 225, 210, 0.95) 100%);
+	box-shadow: inset 0 0 15px rgba(184, 134, 89, 0.05);
+	transition: background 0.6s ease, box-shadow 0.6s ease;
+}
+
+
+.card-right p {
+	font-family: Merriweather;
+	/* font-family: "华文行楷"; */
+	font-size: 19px; /* 增大字体 */
+	 /* 提升行高增强可读性 */
+	color: rgba(52, 73, 94, 0.95); /* 更深的颜色提升对比度 */
+	margin-bottom: 5px; /* 增加段落间距 */
+	line-height: 1.5;
+	font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'SimSun', serif; /* 更优雅的中文字体 */
+	text-indent: 2em;
+	font-weight: 500; /* 适中的字重 */
+	letter-spacing: 0.3px; /* 增加字符间距 */
+	text-align: justify; /* 两端对齐 */
+}
+
+/* 内容切换样式 */
+.content-k1, .content-k2 {
+	transition: opacity 0.3s ease;
+}
+
+/* 和平饭店卡片悬停时右侧背景变化 */
+#card-和平饭店:hover .card-right {
+	background: linear-gradient(135deg, rgba(245, 245, 220, 0.03) 0%, rgba(240, 230, 210, 0.04) 50%, rgba(235, 225, 200, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(230, 220, 190, 0.03);
+}
+/* 美琪大剧院卡片悬停时右侧背景变化 */
+#card-美琪大剧院:hover .card-right {
+	background: linear-gradient(135deg, rgba(230, 230, 250, 0.03) 0%, rgba(220, 220, 240, 0.04) 50%, rgba(210, 210, 230, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(200, 200, 220, 0.03);
+}
+/* 四行仓库卡片悬停时右侧背景变化 */
+#card-四行仓库:hover .card-right {
+	background: linear-gradient(135deg, rgba(240, 248, 255, 0.03) 0%, rgba(230, 240, 250, 0.04) 50%, rgba(220, 235, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(200, 220, 240, 0.03);
+}
+/* 马勒别墅卡片悬停时右侧背景变化 */
+#card-马勒别墅:hover .card-right {
+	background: linear-gradient(135deg, rgba(240, 255, 240, 0.03) 0%, rgba(230, 250, 230, 0.04) 50%, rgba(220, 245, 220, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(200, 230, 200, 0.03);
+}
+/* 和平女神像卡片悬停时右侧背景变化 */
+#card-和平女神像:hover .card-right {
+	background: linear-gradient(135deg, rgba(248, 248, 255, 0.03) 0%, rgba(240, 240, 250, 0.04) 50%, rgba(235, 235, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(220, 220, 235, 0.03);
+}
+/* 信号台卡片悬停时右侧背景变化 */
+#card-信号台:hover .card-right {
+	background: linear-gradient(135deg, rgba(245, 255, 250, 0.03) 0%, rgba(235, 250, 240, 0.04) 50%, rgba(225, 245, 230, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(210, 235, 220, 0.03);
+}
+/* 百乐门卡片悬停时右侧背景变化 */
+#card-百乐门:hover .card-right {
+	background: linear-gradient(135deg, rgba(250, 250, 240, 0.03) 0%, rgba(245, 245, 235, 0.04) 50%, rgba(240, 240, 230, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(235, 235, 225, 0.03);
+}
+/* 南京大戏院卡片悬停时右侧背景变化 */
+#card-南京大戏院:hover .card-right {
+	background: linear-gradient(135deg, rgba(245, 250, 255, 0.03) 0%, rgba(235, 245, 250, 0.04) 50%, rgba(225, 240, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(215, 230, 240, 0.03);
+}
+/* 东方汇理银行卡片悬停时右侧背景变化 */
+#card-东方汇理银行:hover .card-right {
+	background: linear-gradient(135deg, rgba(250, 248, 250, 0.03) 0%, rgba(245, 243, 245, 0.04) 50%, rgba(240, 238, 240, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(230, 228, 230, 0.03);
+}
+/* 锦江饭店卡片悬停时右侧背景变化 */
+#card-锦江饭店:hover .card-right {
+	background: linear-gradient(135deg, rgba(248, 248, 255, 0.03) 0%, rgba(243, 243, 250, 0.04) 50%, rgba(238, 238, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(228, 228, 235, 0.03);
+}
+/* 上海大厦卡片悬停时右侧背景变化 */
+#card-上海大厦:hover .card-right {
+	background: linear-gradient(135deg, rgba(255, 250, 240, 0.03) 0%, rgba(250, 245, 235, 0.04) 50%, rgba(245, 240, 230, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(240, 235, 225, 0.03);
+}
+/* 国泰电影院卡片悬停时右侧背景变化 */
+#card-国泰电影院:hover .card-right {
+	background: linear-gradient(135deg, rgba(240, 255, 245, 0.03) 0%, rgba(235, 250, 240, 0.04) 50%, rgba(230, 245, 235, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(220, 235, 225, 0.03);
+}
+/* 淮海大楼卡片悬停时右侧背景变化 */
+#card-淮海大楼:hover .card-right {
+	background: linear-gradient(135deg, rgba(250, 245, 245, 0.03) 0%, rgba(245, 240, 240, 0.04) 50%, rgba(240, 235, 235, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(235, 230, 230, 0.03);
+}
+/* 徐家汇天主教堂卡片悬停时右侧背景变化 */
+#card-徐家汇天主教堂:hover .card-right {
+	background: linear-gradient(135deg, rgba(245, 245, 255, 0.03) 0%, rgba(240, 240, 250, 0.04) 50%, rgba(235, 235, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(225, 225, 235, 0.03);
+}
+/* 何东旧居卡片悬停时右侧背景变化 */
+#card-何东旧居:hover .card-right {
+	background: linear-gradient(135deg, rgba(240, 250, 250, 0.03) 0%, rgba(235, 245, 245, 0.04) 50%, rgba(230, 240, 240, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(220, 230, 230, 0.03);
+}
+/* 兰心大戏院卡片悬停时右侧背景变化 */
+#card-兰心大戏院:hover .card-right {
+	background: linear-gradient(135deg, rgba(255, 248, 240, 0.03) 0%, rgba(250, 243, 235, 0.04) 50%, rgba(245, 238, 230, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(240, 233, 225, 0.03);
+}
+/* 哥伦比亚乡村俱乐部卡片悬停时右侧背景变化 */
+#card-哥伦比亚乡村俱乐部:hover .card-right {
+	background: linear-gradient(135deg, rgba(250, 245, 255, 0.03) 0%, rgba(245, 240, 250, 0.04) 50%, rgba(240, 235, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(230, 225, 235, 0.03);
+}
+/* 常德公寓卡片悬停时右侧背景变化 */
+#card-常德公寓:hover .card-right {
+	background: linear-gradient(135deg, rgba(240, 245, 255, 0.03) 0%, rgba(235, 240, 250, 0.04) 50%, rgba(230, 235, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(220, 225, 235, 0.03);
+}
+/* 德义大楼卡片悬停时右侧背景变化 */
+#card-德义大楼:hover .card-right {
+	background: linear-gradient(135deg, rgba(255, 245, 245, 0.03) 0%, rgba(250, 240, 240, 0.04) 50%, rgba(245, 235, 235, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(235, 225, 225, 0.03);
+}
+/* 同孚大楼卡片悬停时右侧背景变化 */
+#card-同孚大楼:hover .card-right {
+	background: linear-gradient(135deg, rgba(248, 255, 240, 0.03) 0%, rgba(243, 250, 235, 0.04) 50%, rgba(238, 245, 230, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(228, 235, 220, 0.03);
+}
+/* 国际饭店卡片悬停时右侧背景变化 */
+#card-国际饭店:hover .card-right {
+	background: linear-gradient(135deg, rgba(248, 248, 255, 0.03) 0%, rgba(243, 243, 250, 0.04) 50%, rgba(238, 238, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(228, 228, 235, 0.03);
+}
+/*大光明电影院卡片悬停时右侧背景变化 */
+#card-大光明电影院:hover .card-right {
+	background: linear-gradient(135deg, rgba(255, 252, 240, 0.03) 0%, rgba(250, 247, 235, 0.04) 50%, rgba(245, 242, 230, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(240, 237, 225, 0.03);
+}
+/*圣三一堂卡片悬停时右侧背景变化 */
+#card-圣三一堂:hover .card-right {
+	background: linear-gradient(135deg, rgba(245, 248, 255, 0.03) 0%, rgba(240, 243, 250, 0.04) 50%, rgba(235, 238, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(225, 228, 235, 0.03);
+}
+/*大世界卡片悬停时右侧背景变化 */
+#card-大世界:hover .card-right {
+	background: linear-gradient(135deg, rgba(255, 248, 250, 0.03) 0%, rgba(250, 243, 245, 0.04) 50%, rgba(245, 238, 240, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(235, 228, 230, 0.03);
+}
+/*平安电影院卡片悬停时右侧背景变化 */
+#card-平安电影院:hover .card-right {
+	background: linear-gradient(135deg, rgba(240, 255, 255, 0.03) 0%, rgba(235, 250, 250, 0.04) 50%, rgba(230, 245, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(220, 235, 235, 0.03);
+}
+/*东方饭店上海工人文化宫卡片悬停时右侧背景变化 */
+#card-东方饭店上海工人文化宫:hover .card-right {
+	background: linear-gradient(135deg, rgba(255, 250, 245, 0.03) 0%, rgba(250, 245, 240, 0.04) 50%, rgba(245, 240, 235, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(235, 230, 225, 0.03);
+}
+/*第一百货商店卡片悬停时右侧背景变化 */
+#card-第一百货商店:hover .card-right {
+	background: linear-gradient(135deg, rgba(250, 248, 255, 0.03) 0%, rgba(245, 243, 250, 0.04) 50%, rgba(240, 238, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(230, 228, 235, 0.03);
+}
+/*上海犹太人总会卡片悬停时右侧背景变化 */
+#card-上海犹太人总会:hover .card-right {
+	background: linear-gradient(135deg, rgba(248, 255, 248, 0.03) 0%, rgba(243, 250, 243, 0.04) 50%, rgba(238, 245, 238, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(228, 235, 228, 0.03);
+}
+/*西摩会堂卡片悬停时右侧背景变化 */
+#card-西摩会堂:hover .card-right {
+	background: linear-gradient(135deg, rgba(255, 248, 245, 0.03) 0%, rgba(250, 243, 240, 0.04) 50%, rgba(245, 238, 235, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(235, 228, 225, 0.03);
+}
+/*武康大楼卡片悬停时右侧背景变化 */
+#card-武康大楼:hover .card-right {
+	background: linear-gradient(135deg, rgba(248, 245, 255, 0.03) 0%, rgba(243, 240, 250, 0.04) 50%, rgba(238, 235, 245, 0.5) 100%);
+	box-shadow: inset 0 0 15px rgba(228, 225, 235, 0.03);
+}
+/* 悬停提示 */
+.hover-hint {
+	position: absolute;
+	font-family: Georgia;
+	filter: drop-shadow(1px 1px 8px rgba(255, 255, 255, 0.7));
+	transition: opacity 0.8s ease;
+	top: 250px;
+	right: 12px;
+	font-size: 30px;
+	color: rgba(12, 9, 5, 0.9);
+	font-style: italic;
+	text-align: right;
+	z-index: 2;
+	pointer-events: none; /* 不阻挡悬停交互 */
+	transition: color 0.3s ease;
+}
+
+.card:hover .hover-hint {
+	font-family: Georgia;
+	color: rgba(42, 31, 18, 0.9);
+	filter: drop-shadow(1px 1px 8px rgba(255, 255, 255, 0.7));
+	transition: opacity 0.8s ease;
+}
