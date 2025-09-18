@@ -29,8 +29,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggle = document.getElementById('intro-toggle');
     const backdrop = document.getElementById('intro-backdrop');
     const closeBtn = document.querySelector('.intro-close');
-    function openIntro(){ root.classList.add('intro-visible'); }
-    function closeIntro(){ root.classList.remove('intro-visible'); }
+    function openIntro(){
+        root.classList.add('intro-visible');
+        if (backdrop){ backdrop.style.opacity = '1'; backdrop.style.visibility = 'visible'; }
+        const overlay = document.getElementById('intro-overlay');
+        if (overlay){ overlay.style.opacity = '1'; overlay.style.visibility = 'visible'; }
+    }
+    function closeIntro(){
+        root.classList.remove('intro-visible');
+        if (backdrop){ backdrop.style.opacity = '0'; backdrop.style.visibility = 'hidden'; }
+        const overlay = document.getElementById('intro-overlay');
+        if (overlay){ overlay.style.opacity = '0'; overlay.style.visibility = 'hidden'; }
+    }
     // 每次进入列表视图自动弹一次
     openIntro();
     toggle?.addEventListener('click', openIntro);
