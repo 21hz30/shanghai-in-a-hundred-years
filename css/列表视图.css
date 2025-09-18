@@ -44,48 +44,48 @@ header{
 	/* float: right; *//* 右浮动 */
 }
 .mui-bar a{
-/* 	font-size: 12px; */
-	font-family: times;
-	filter: drop-shadow(1px 1px 8px rgba(240, 208, 179, 0.9));
-	transition: opacity 0.8s ease;
-	font-style: italic;
-		text-decoration: none; /* Clean, modern approach */
-		color:  rgba(90, 70, 40, 0.9); /* Refined brown tone for better contrast */
-		/* font-family: inherit; *//* Inherit the modern font stack from header */
-		font-weight: 10000; /* Medium weight for navigation links */
-		/* font-size: inherit; */ /* Consistent with header size */
-		border-radius: 20px; /* Subtle, modern border radius */
-		/* padding: 8px 12px; */ /* Balanced padding for touch targets */
-		margin: 0 4px; /* Spacing between navigation items */
-		/* background-color: rgba(141, 111, 63, 0.25); */ /* Slightly more transparent */
-		/* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */ /* Softer, more modern shadow */
-		transition: all 0.2s ease; /* Smooth hover transitions */
-		display: inline-block; /* Better control over spacing */
-		vertical-align: middle; /* Proper alignment */
-		
-	}
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	font-style: normal;
+	text-decoration: none;
+	color: #2d1f17;
+	font-weight: 600;
+	font-size: 16px;
+	border-radius: 12px;
+	padding: 12px 20px;
+	margin: 0 8px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 2px solid rgba(141, 111, 63, 0.3);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	display: inline-block;
+	vertical-align: middle;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
 	
 	.mui-bar a:hover {
-		background-color: rgba(141, 111, 63, 0.4); /* Subtle hover effect */
-		color: #2d1f17; /* Darker text on hover */
-		transform: translateY(-1px); /* Gentle lift effect */
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-		
+		background-color: rgba(141, 111, 63, 0.15);
+		color: #1a1309;
+		transform: translateY(-2px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+		border-color: rgba(141, 111, 63, 0.5);
 	}
 	
 	/* 活跃状态样式 */
 	.mui-bar a.active {
-		background-color: rgba(141, 111, 63, 0.6); /* 更深的背景色表示活跃状态 */
-		color: #2d1f17; /* 深色文字 */
-		transform: translateY(-1px); /* 保持悬浮效果 */
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 更明显的阴影 */
-		font-weight: bold; /* 加粗字体 */
+		background-color: rgba(141, 111, 63, 0.9);
+		color: #ffffff;
+		transform: translateY(-1px);
+		box-shadow: 0 6px 16px rgba(141, 111, 63, 0.4);
+		border-color: rgba(141, 111, 63, 0.8);
+		font-weight: 700;
 	}
 	
 	/* 活跃状态的悬停效果 */
 	.mui-bar a.active:hover {
-		background-color: rgba(141, 111, 63, 0.7); /* 悬停时稍微加深 */
-		transform: translateY(-1px); /* 保持悬浮位置 */
+		background-color: rgba(141, 111, 63, 1);
+		transform: translateY(-2px);
+		box-shadow: 0 8px 20px rgba(141, 111, 63, 0.5);
 	}
 
 #deco-j2{
