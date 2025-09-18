@@ -30,27 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// 获取聚光灯遮罩元素
+// 获取聚光灯遮罩元素（可选）
 const spotlight = document.querySelector('.spotlight-mask');
 
-// 监听鼠标移动事件，实时更新聚光灯位置
+// 监听鼠标移动事件，实时更新聚光灯位置（若存在）
 document.addEventListener('mousemove', (e) => {
-    // 获取鼠标在视窗中的X和Y坐标
+    if (!spotlight) return;
     const mouseX = e.clientX;
     const mouseY = e.clientY;
-
-    // 通过CSS自定义属性，将鼠标位置传递给样式表
     spotlight.style.setProperty('--mouse-x', `${mouseX}px`);
     spotlight.style.setProperty('--mouse-y', `${mouseY}px`);
 });
 
-// 页面加载完成后，初始化聚光灯位置到屏幕中心
+// 页面加载完成后，初始化聚光灯位置到屏幕中心（若存在）
 window.addEventListener('load', () => {
-    // 计算屏幕中心的X和Y坐标
+    if (!spotlight) return;
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
-    
-    // 设置聚光灯的初始位置
     spotlight.style.setProperty('--mouse-x', `${centerX}px`);
     spotlight.style.setProperty('--mouse-y', `${centerY}px`);
 });
@@ -78,4 +74,24 @@ function initTopNavigation() {
 // 在DOM加载完成时初始化顶部导航栏
 document.addEventListener('DOMContentLoaded', function() {
     initTopNavigation();
+    // Intro overlay init
+    const root = document.documentElement;
+    const toggle = document.getElementById('intro-toggle');
+    const overlay = document.getElementById('intro-overlay');
+    const backdrop = document.getElementById('intro-backdrop');
+    const closeBtn = document.querySelector('.intro-close');
+
+    function openIntro() {
+        root.classList.add('intro-visible');
+    }
+    function closeIntro() {
+        root.classList.remove('intro-visible');
+    }
+
+    // 每次进入 Map View 都自动打开一次
+    openIntro();
+
+    toggle?.addEventListener('click', openIntro);
+    closeBtn?.addEventListener('click', closeIntro);
+    backdrop?.addEventListener('click', closeIntro);
 });

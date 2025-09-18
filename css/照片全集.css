@@ -103,7 +103,7 @@ header{
 	z-index: 1;
 	opacity: 1;
 }
-#deco-j4{
+#deco-j4-gallery{
 	position: absolute;
 	margin-top: 372px;
 	margin-left: 28px;
@@ -163,19 +163,20 @@ header{
 
 /* 主要内容 */
 #substance{
-	background-color: rgba(38, 29, 17, 0.2);
-	width: 1300px;
-	height: 745px;
-	margin-top: 25px;
-	margin-left: 125px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-	z-index: 40;
-	border-radius: 40px;
-	position: relative;
-	overflow-y: auto;
-	/* 自定义滚动条样式 */
-	scrollbar-width: thin;
-	scrollbar-color: rgba(141, 111, 63, 0.8) rgba(141, 111, 63, 0.2);
+    background-color: rgba(38, 29, 17, 0.2);
+    width: min(96vw, 1300px);
+    height: calc(100vh - 120px);
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    z-index: 40;
+    border-radius: 40px;
+    position: relative;
+    overflow-y: auto;
+    /* 自定义滚动条样式 */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(141, 111, 63, 0.8) rgba(141, 111, 63, 0.2);
 }
 /* Webkit浏览器滚动条样式 */
 #substance::-webkit-scrollbar {
@@ -199,28 +200,32 @@ header{
 
 /* 卡片容器样式 */
 .card-container {
-	/* position: absolute; */
-	left: 5px;
-	top: 5px;
-	z-index: 200;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 200;
 }
 
 /* 卡片样式 */
 .card {
-	/* display: flex; */
-	/* float:top; */
-	/* position: relative; */
-	width: 1286px;
-	height: 720px;
-	background: rgba(255, 255, 255, 0.95);
-	border-radius: 40px;
-	box-shadow: 0 15px 40px rgba(99, 70, 49, 0.2), 0 0 35px rgba(141, 111, 63, 0.1);
-	margin-bottom: 30px;
-	overflow: hidden;
-	transition: all 0.4s ease;
-	border: 2px solid rgba(141, 111, 63, 0.2);
-	margin-top: 10px;
-	margin-left: 0px;
+    /* display: flex; */
+    /* float:top; */
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 40px;
+    box-shadow: 0 15px 40px rgba(99, 70, 49, 0.2), 0 0 35px rgba(141, 111, 63, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 2px solid rgba(141, 111, 63, 0.2);
+    margin-top: 10px;
+    margin-left: 0px;
 }
 
 
@@ -240,37 +245,45 @@ header{
 	box-shadow: 0 4px 16px rgba(255, 255, 255, 0.4);
 }
 .card-container p{
-	filter: drop-shadow(1px 1px 8px rgba(240, 208, 179, 0.9));
-	transition: opacity 0.8s ease;
-	font-family: "方正舒体";
-	color: #000000;
-	/* writing-mode: vertical-rl; */  /* 关键属性：vertical-rl 或 vertical-lr */
-	/* text-orientation: upright; *//* 保持字符正立 */
-	/* 可选：微调字间距与行距 */
-	/* letter-spacing: 20em; */
-	/* line-height: 1.5; */
-	/* word-spacing: -90px; */
-	white-space: nowrap;       /* 防止自动换行 */
-	/* font-family: "楷体"; */
-	font-weight: bold;
-	font-size: 30px;
-	position: absolute;
-	/* float: right; */
-	margin-top: 50%;
-	right: 5%; /* 改用right定位，让文字右对齐 */
-	text-align: right; /* 文字右对齐 */
-	width: 100%; /* 设置宽度确保有足够空间 */
-	z-index: 100;
-	/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.9); */
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
+    transition: opacity 0.8s ease;
+    font-family: "方正舒体";
+    color: #ffffff;
+    white-space: nowrap; /* 防止断行 */
+    font-weight: bold;
+    font-size: 28px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.45);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    text-align: right;
+    z-index: 1000; /* 高于图片 */
+    pointer-events: none; /* 不阻挡图片交互 */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
 .photo {
-	position: relative;
-	padding: 10px;
-	min-height: 200px;
-	overflow: hidden;
-	width: 100%;
-	height: auto;
-	margin-top: 10px;
-	margin-left: 10px;
+    position: relative;
+    padding: 10px;
+    min-height: 200px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 12px;
+}
+
+/* 照片在栅格内自适应填充 */
+.photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }

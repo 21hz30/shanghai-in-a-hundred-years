@@ -21,7 +21,6 @@
 				<img src="img/2-4.png" id="deco-j7" alt="云朵中" decoding="async" loading="lazy">
 				<img src="img/1-2.png" id="deco-j2" alt="浦东天际线左" decoding="async" loading="lazy">
 				<img src="img/2-2.png" id="deco-j3" alt="浦东天际线右" decoding="async" loading="lazy">
-				<img src="img/2-1.png" id="deco-j4" alt="东方明珠" decoding="async" loading="lazy">
 				<!-- 背景地图图片 -->
 				<div id="a2">
 					<img src="./img/上海地图.png" id="a1" alt="上海老地图"
@@ -181,6 +180,19 @@
 				</div>
 			</div>
 		</main>
+		<!-- Intro overlay and toggle button -->
+		<div id="intro-backdrop" aria-hidden="true"></div>
+		<div id="intro-overlay" role="dialog" aria-labelledby="intro-title" aria-modal="true">
+			<button class="intro-close" aria-label="Close intro" title="Close">×</button>
+			<h2 id="intro-title">For My Reader</h2>
+			<div class="intro-content">
+				<p>Welcome to a quiet journey through Shanghai’s modern past. This site invites you to see the city through two lenses: the landmarks that shaped its skyline, and the coffee houses that give it warmth today. Think of it as a curated walk: simple, calm, and human.</p>
+				<p>Start with Map View. Each marker highlights a place of architectural or cultural significance. Tap to open a concise story and a nearby café suggestion—spaces where you can pause, reflect, and let the city speak at its own pace.</p>
+				<p>Prefer structure? Switch to List View for a clean index. Drawn to images? The Photo Gallery offers side-by-side glimpses—archival scenes and contemporary echoes.</p>
+				<p>This is not a checklist, but an invitation. Follow your curiosity, linger with respect, and let the city do the longer telling.</p>
+			</div>
+		</div>
+		<button id="intro-toggle" aria-haspopup="dialog" aria-controls="intro-overlay" title="For My Reader">For My Reader</button>
 		 <!-- 引入外部JavaScript文件 -->
 		<script src="./js/地图视图.js"></script>
 	</body>
