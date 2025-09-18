@@ -23,6 +23,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 启动高度自适应监测
     initHeightAutoAdjust();
+
+    // Intro overlay init
+    const root = document.documentElement;
+    const toggle = document.getElementById('intro-toggle');
+    const backdrop = document.getElementById('intro-backdrop');
+    const closeBtn = document.querySelector('.intro-close');
+    function openIntro(){ root.classList.add('intro-visible'); }
+    function closeIntro(){ root.classList.remove('intro-visible'); }
+    // 每次进入列表视图自动弹一次
+    openIntro();
+    toggle?.addEventListener('click', openIntro);
+    closeBtn?.addEventListener('click', closeIntro);
+    backdrop?.addEventListener('click', closeIntro);
 });
 
 // 卡片悬停效果
