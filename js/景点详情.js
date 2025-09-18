@@ -39,7 +39,7 @@ function initCafeInfoToggle() {
              if (z3) z3.style.opacity = '1';
              
              // 更新按钮文本
-             viewCafeInfoBtn.textContent = 'Return original information';
+             viewCafeInfoBtn.textContent = 'Return to site information';
          } else {
              // 显示原始状态
              if (name1) name1.style.opacity = '1';
@@ -53,7 +53,7 @@ function initCafeInfoToggle() {
              if (z3) z3.style.opacity = '0';
              
              // 更新按钮文本
-             viewCafeInfoBtn.textContent = 'Click to view cafe information';
+             viewCafeInfoBtn.textContent = 'Explore a Café next to this site';
          }
     }
 }
