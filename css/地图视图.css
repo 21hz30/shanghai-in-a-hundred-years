@@ -295,6 +295,17 @@ header{
 
 #intro-overlay h2{ margin: 0 0 8px 0; font-size: 20px; font-weight: 700; }
 #intro-overlay .intro-content p{ margin: 10px 0; }
+/* 强调最后一句提示 */
+#intro-overlay strong{
+	display: inline-block;
+	font-weight: 800;
+	font-size: 18px;
+	color: #FFD166; /* 温暖高对比强调色 */
+	background: rgba(255, 209, 102, 0.16);
+	padding: 4px 8px;
+	border-radius: 10px;
+	letter-spacing: 0.2px;
+}
 
 .intro-close{
 	position: absolute;

@@ -308,6 +308,11 @@ header{
 }
 #intro-overlay h2{ margin:0 0 8px 0; font-size:20px; font-weight:700; }
 #intro-overlay .intro-content p{ margin:10px 0; }
+.intro-visible #intro-overlay strong{
+	display:inline-block; font-weight:800; font-size:18px;
+	color:#FFD166; background:rgba(255,209,102,0.16);
+	padding:4px 8px; border-radius:10px; letter-spacing:0.2px;
+}
 .intro-close{ position:absolute; top:8px; right:10px; width:32px; height:32px; border:0; border-radius:8px; background:rgba(255,255,255,0.12); color:#fff; font-size:22px; cursor:pointer; }
 #intro-toggle{ position:fixed; right:18px; bottom:18px; padding:10px 14px; border-radius:999px; border:2px solid rgba(141,111,63,0.35); background:rgba(255,255,255,0.9); color:#2d1f17; font-weight:600; box-shadow:0 6px 18px rgba(0,0,0,0.15); cursor:pointer; z-index:10001; }
 .intro-visible #intro-backdrop, .intro-visible #intro-overlay{ opacity:1; visibility:visible; }
